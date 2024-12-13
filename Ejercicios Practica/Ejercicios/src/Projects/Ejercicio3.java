@@ -74,7 +74,17 @@ public class Ejercicio3 {
 
         // Calcular el total final a pagar
         float totalFinal = precioFinalServicioAgua + impuestoAlcantarillado + tasaBasura + tasaProcesamiento;
-
+        
+// Redondear los valores a dos decimales
+        precioNormal = Math.round(precioNormal * 100.0f) / 100.0f;
+        descuentoDiscapacidad = Math.round(descuentoDiscapacidad * 100.0f) / 100.0f;
+        descuentoTerceraEdad = Math.round(descuentoTerceraEdad * 100.0f) / 100.0f;
+        precioFinalServicioAgua = Math.round(precioFinalServicioAgua * 100.0f) / 100.0f;
+        impuestoAlcantarillado = Math.round(impuestoAlcantarillado * 100.0f) / 100.0f;
+        tasaBasura = Math.round(tasaBasura * 100.0f) / 100.0f;
+        tasaProcesamiento = Math.round(tasaProcesamiento * 100.0f) / 100.0f;
+        totalFinal = Math.round(totalFinal * 100.0f) / 100.0f;
+        
         // Mostrar los detalles
         System.out.println("Detalle del informe en el mes de " +mes+ ":");
         System.out.println("Consumo de agua: " + cantidadConsumoM3 + " m^3");
